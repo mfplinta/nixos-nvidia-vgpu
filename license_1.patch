@@ -1,0 +1,10 @@
+--- NVIDIA-Linux-x86_64-460.32.04-vgpu-kvm/kernel/nvidia-vgpu-vfio/nvidia-vgpu-vfio.c	2021-01-05 23:48:17.000000000 -0700
++++ new/kernel/nvidia-vgpu-vfio/nvidia-vgpu-vfio.c	2021-06-30 01:28:25.737808312 -0600
+@@ -4179,6 +4179,6 @@
+ module_init(nv_vgpu_vfio_init);
+ module_exit(nv_vgpu_vfio_exit);
+ 
+-MODULE_LICENSE("MIT");
++MODULE_LICENSE("Dual MIT/GPL");
+ MODULE_INFO(supported, "external");
+ MODULE_VERSION(NV_VERSION_STRING);

@@ -70,6 +70,8 @@ in
       src = "${nvidia-drivers-zips}/NVIDIA-Linux-x86_64-${gridVersion}-grid.run";
 
       patches = patches ++ [
+        ./license_1.patch
+        ./license_2.patch
         ./nvidia-vgpu-merge.patch
       ] ++ lib.optional cfg.unlock.enable
         (pkgs.substituteAll {
